@@ -137,3 +137,52 @@
 # for item in my_dict.values():
 #     result *= item
 # print(result)    
+
+#-----------------------
+
+# # 12. Write a Python program to remove a key from a dictionary.
+
+# my_dict = {1: 1, 2: 4, 3: 9, 4: 16, 5: 25, 6: 36, 7: 49}
+
+# my_dict.pop(6)
+# print(my_dict)
+
+#-----------------------
+
+# # 13. Write a Python program to map two lists into a dictionary.
+
+# list1 = ["orange", "apple", "pear", "strawberry"]
+# list2 = [1, 2, 3, 4]
+
+# my_dict = {list1[item] : list2[item] for item in range(len(list1))}
+# # my_dict = {}
+# # for item in range(len(list1)):
+# #     my_dict.update({list1[item] : list2[item]})
+# print(my_dict)
+
+#-----------------------
+
+# # 14. Write a Python program to sort a given dictionary by key.
+
+# my_dict = {'orange': 1, 'apple': 2, 'pear': 3, 'strawberry': 4}
+
+# my_sorted_dict = dict(sorted(my_dict.items()))
+# # print( f" {k}: {v}"for k, v in my_sorted_dict.items())
+# print(my_sorted_dict)
+
+
+#-----------------------
+
+# # 15. Write a Python program to get the maximum and minimum values of a dictionary.
+
+# my_dict = {'orange': 1, 'apple': 2, 'pear': 3, 'strawberry': 4}
+
+# # max_value = max(my_dict.values())
+# # min_value = min(my_dict.values())
+
+# max_value = max(my_dict.keys(), key = lambda value: my_dict[value])
+# min_value = min(my_dict.keys(), key = lambda value: my_dict[value])
+# print(f"Max value: {max_value}: {my_dict[max_value]}" )
+# print(f"Min value: {min_value}: {my_dict[min_value]}")
+
+
